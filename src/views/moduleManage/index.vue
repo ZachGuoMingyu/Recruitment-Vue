@@ -1,0 +1,53 @@
+/*
+ * @Author: guomy
+ * 招聘管理页面
+ * @Date: 2019-12-22 16:49:20 
+ * @Last Modified by: guomy
+ * @Last Modified time: 2019-12-23 20:52:03
+ */
+<template>
+  <div id="moduleManage">
+    <el-tabs type="card" v-model="activeName" @tab-click="handleClick">
+      <el-tab-pane label="城市管理" name="city">
+        <span slot="label" style="padding: 0 40px;font-size: 1.2em;">城市管理</span>
+      </el-tab-pane>
+      <el-tab-pane label="福利管理" name="boon">
+        <span slot="label" style="padding: 0 40px;font-size: 1.2em;">福利管理</span>
+      </el-tab-pane>
+      <el-tab-pane label="职位管理" name="position">
+        <span slot="label" style="padding: 0 40px;font-size: 1.2em;">职位管理</span>
+
+      </el-tab-pane>
+    </el-tabs>
+    <!-- 选项卡体部 -->
+    <div class="tbl-content">
+      <router-view></router-view>
+    </div>
+  </div>
+</template>
+
+<script>
+export default {
+  name: "moduleManage",
+  data() {
+    return {
+      activeName: "city"
+    };
+  },
+  created() {},
+  computed: {},
+  methods: {
+    /* 跳转 */
+    handleClick(tab, event) {
+      this.activeName = tab.name;
+      this.$router.push("/moduleManage/index/" + tab.name);
+    }
+  }
+};
+</script>
+<style lang="scss" scoped>
+     /deep/ .el-tabs__item {
+    height: 45px;
+    line-height: 45px;
+}
+</style>
