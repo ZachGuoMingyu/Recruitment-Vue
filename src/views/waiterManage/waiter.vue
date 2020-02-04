@@ -151,25 +151,25 @@ export default {
       //客服分配表
       giveData: [{
           jobhunter: '翟潇闻',
-          contact: '15133548798',
+          contact: '15133541111',
           job: '190/天上一休一连锁超市急招营业员',
           waiter:'程一一',
           time:'2019/12/27'
         }, {
          jobhunter: '翟潇闻',
-          contact: '15133548798',
+          contact: '15133542222',
           job: '190/天上一休一连锁超市急招营业员',
           waiter:'程一一',
           time:'2019/12/27'
         }, {
           jobhunter: '翟潇闻',
-          contact: '15133548798',
+          contact: '15133543333',
           job: '190/天上一休一连锁超市急招营业员',
           waiter:'程一一',
           time:'2019/12/27'
         }, {
           jobhunter: '翟潇闻',
-          contact: '15133548798',
+          contact: '15133544444',
           job: '190/天上一休一连锁超市急招营业员',
           waiter:'程一一',
           time:'2019/12/27'
