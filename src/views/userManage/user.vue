@@ -374,7 +374,7 @@ export default {
             }
           } catch (error) {
             console.log(error);
-            config.errorMsg(this,'修改失败');
+            config.errorMsg(this,'修改失败!');
           }
         } else {
           console.log('error submit!!');
